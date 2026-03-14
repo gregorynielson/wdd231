@@ -83,6 +83,7 @@ nav a {
     text-decoration: none;
 }
 
+a:link,
 a:visited {
     color: var(--quaternary-color);
 }
