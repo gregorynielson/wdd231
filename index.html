@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="styles/index-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
     <script src="scripts/get-dates.js" defer></script>
     <script src="scripts/nav-menu.js" defer></script>
     <script src="scripts/course-array.js" defer></script>
@@ -25,7 +27,7 @@
         <nav class="menu-list">
             <ul class="navigation">
                 <li>
-                    <a>Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
                     <a>Chamber Project</a>
@@ -64,9 +66,16 @@
 
     </main>
     <footer>
-        <img class="facebook" src="images/facebook.svg" alt="facebook logo">
-        <img class="github" src="images/github.svg" alt="github logo">
-        <img class="linkedin" src="images/linkedin.svg" alt="linked in logo">
+        <a href="https://www.facebook.com" aria-label="link to facebook home page">
+            <img class="facebook" src="images/facebook.svg" alt="facebook logo">
+        </a>
+        <a href="https://github.com/gregorynielson/wdd231" aria-label="link to github repository">
+            <img class="github" src="images/github.svg" alt="github logo">
+        </a>
+        <a href="https://www.linkedin.com" aria-label="link to linked in home page">
+            <img class="linkedin" src="images/linkedin.svg" alt="linked in logo">
+        </a>
+
         <p>&copy; <span id="year"></span> | Greg Nielson | Ohio, USA</p>
         <p id="lastModified"></p>
     </footer>
