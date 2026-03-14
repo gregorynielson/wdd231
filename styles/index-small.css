@@ -1,0 +1,186 @@
+:root {
+    --primary-color: rgb(6, 96, 213);
+    --secondary-color: rgb(0, 55, 117);
+    --tertiary-color: rgb(0, 9, 59);
+    --quaternary-color: rgb(210, 223, 229);
+
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+}
+
+header {
+    display: grid;
+    grid-template-columns: 60px auto 44px;
+    padding: 1rem;
+    position: relative;
+    background-color: var(--secondary-color);
+    height: 87px;
+}
+
+.title {
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    height: 50px;
+    margin-top: 15px;
+}
+
+#menu {
+    display: block;
+    text-decoration: none;
+    text-align: right;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-top: 10px;
+    background-color: var(--secondary-color)
+}
+
+.hamburger::before {
+    content: "\2630";
+    color: white;
+    font-size: 3rem;
+}
+
+nav {
+    max-width: 640px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.menu-list {
+    display: none;
+}
+
+.menu-list.show {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navigation li {
+    display: none;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+}
+
+.show li {
+    display: block;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+h1 {
+    color: var(--tertiary-color);
+}
+
+section h2 {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    font-size: larger;
+    padding: 0.5rem;
+}
+
+section {
+    background-color: var(--quaternary-color);
+    color: var(--tertiary-color);
+}
+
+.about p {
+    padding: 1rem;
+}
+
+.profile {
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    background-color: white;
+    color: var(--tertiary-color);
+    padding: 0.25rem;
+    border: 5px solid var(--tertiary-color);
+    border-radius: 12px;
+    height: 3rem;
+    width: 10rem;
+}
+
+button:hover {
+    background-color: var(--tertiary-color);
+    color: white;
+}
+
+#course-array {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+}
+
+.course-array p {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.course-array p.complete {
+    background-color: var(--primary-color);
+}
+
+#credits {
+    text-align: center;
+    padding: 1rem;
+}
+
+.facebook,
+.github,
+.linkedin {
+    width: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+}

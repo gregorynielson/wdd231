@@ -1,0 +1,116 @@
+:root {
+    --primary-color: #1f3a5f;
+    --secondary-color: #d4a017;
+    --accent-color: #f4f4f4;
+    --text-color: #333333;
+}
+
+body {
+    background-color: var(--accent-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 1rem;
+    position: relative;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    height: 87px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+}
+
+.subtitle {
+    color: var(--secondary-color);
+    font-size: 1.25rem;
+}
+
+#menu {
+    display: block;
+    text-decoration: none;
+    text-align: right;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-top: 10px;
+    background-color: var(--primary-color)
+}
+
+.hamburger::before {
+    content: "\2630";
+    color: var(--secondary-color);
+    font-size: 3rem;
+}
+
+nav {
+    max-width: 640px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+}
+
+.menu-list {
+    display: none;
+}
+
+.menu-list.show {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navigation li {
+    display: none;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+}
+
+.show li {
+    display: block;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+main {
+    background-color: var(--accent-color);
+}
+
+h1 {
+    color: var(--text-color);
+    padding: 1rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 1rem;
+}
+
+.footer-title {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}

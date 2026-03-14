@@ -1,0 +1,84 @@
+{
+    "companies": [
+        {
+            "name": "Riverbend Family Dentistry",
+            "address": "214 Spring Meadows Dr, Sylvania, OH 43560",
+            "phoneNumber": "(419) 555-0132",
+            "websiteUrl": "www.riverbendfamilydentistry.com",
+            "image": "",
+            "level": "3"
+        },
+        {
+            "name": "North Valley Construction Group",
+            "address": "875 Centennial Rd, Sylvania, OH 43560",
+            "phoneNumber": "(419) 555-0178",
+            "websiteUrl": "www.northvalleybuilds.com",
+            "image": "",
+            "level": "3"
+        },
+        {
+            "name": "Green Leaf Garden Center",
+            "address": "642 Central Ave, Sylvania, OH 43560",
+            "phoneNumber": "(419) 555-0194",
+            "websiteUrl": "www.greenleafsylvania.com",
+            "image": "",
+            "level": "2"
+        },
+        {
+            "name": "Maple Street Coffee Roasters",
+            "address": "55 Maple St, Sylvania, OH 43560",
+            "phoneNumber": "(419) 555-0126",
+            "websiteUrl": "www.maplestreetroasters.com",
+            "image": "",
+            "level": "2"
+        },
+        {
+            "name": "Horizon IT Solutions",
+            "address": "301 N Reynolds Rd, Sylvania, OH 43560",
+            "phoneNumber": "(419) 555-0145",
+            "websiteUrl": "www.horizonitsolutions.com",
+            "image": "",
+            "level": "3"
+        },
+        {
+            "name": "Swan Creek Auto Repair",
+            "address": "1190 Arrowhead Rd, Sylvania, OH 43560",
+            "phoneNumber": "(419) 555-0163",
+            "websiteUrl": "www.swancreekautorepair.com",
+            "image": "",
+            "level": "1"
+        },
+        {
+            "name": "Lakeside Realty Group",
+            "address": "402 Vicksburg Dr, Sylvania, OH 43560",
+            "phoneNumber": "(419) 555-0189",
+            "websiteUrl": "www.lakesiderealtysylvania.com",
+            "image": "",
+            "level": "3"
+        },
+        {
+            "name": "Sunrise Fitness & Wellness",
+            "address": "720 McCord Rd, Sylvania, OH 43560",
+            "phoneNumber": "(413) 555-0151",
+            "websiteUrl": "www.sunrisefitness.com",
+            "image": "",
+            "level": "2"
+        },
+        {
+            "name": "Heritage Print & Sign Co.",
+            "address": "288 N Kind Rd, Sylvania, OH 43560",
+            "phoneNumber": "(413) 555-0117",
+            "websiteUrl": "www.heritageprintsign.com",
+            "image": "",
+            "level": "1"
+        },
+        {
+            "name": "Riverfront Bistro",
+            "address": "14 Summit St, Sylvania, OH 43560",
+            "phoneNumber": "(413)555-0108",
+            "websiteUrl": "www.riverfrontbistro.com",
+            "image": "",
+            "level": "3"
+        }
+    ]
+}

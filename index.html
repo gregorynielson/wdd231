@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 | Course Home Page</title>
+    <meta name="description" content="Course home page for WDD 231 for Greg Nielson">
+    <meta name="author" content="Greg Nielson">
+    <link rel="stylesheet" href="styles/index-small.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <script src="scripts/get-dates.js" defer></script>
+    <script src="scripts/nav-menu.js" defer></script>
+    <script src="scripts/course-array.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img class="icon" src="images/user-trust.svg" alt="site logo">
+        <span class="title">Greg Nielson</span>
+        <a id="menu" class="hamburger" href="#" aria-label="menu button"></a>
+        <nav class="menu-list">
+            <ul class="navigation">
+                <li>
+                    <a>Home</a>
+                </li>
+                <li>
+                    <a>Chamber Project</a>
+                </li>
+                <li>
+                    <a>Final Project</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>My name is Greg Nielson. I am worling towards a Bachelor's Degree in Software Development through BYU
+                Pathway. This is my fourth term. I am on track to finish my first certificate at the end of this term,
+                and complete my Associate's Degree by the end of the year. I live in Northern Ohio, and currently work
+                as a Traffic Coordinator at a Ford parts warehouse. I am excited to be a part of this course and
+                continue learning Web Fundamentals.</p>
+        </section>
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <img class="profile" src="images/profile-pic.webp" alt="student photo">
+        </section>
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="buttons">
+                <button id="all">All Courses</button>
+                <button id="wdd">WDD Courses</button>
+                <button id="cse">CSE Courses</button>
+            </div>
+            <div class="course-array" id="course-array"></div>
+            <p id="credits"></p>
+        </section>
+
+    </main>
+    <footer>
+        <img class="facebook" src="images/facebook.svg" alt="facebook logo">
+        <img class="github" src="images/github.svg" alt="github logo">
+        <img class="linkedin" src="images/linkedin.svg" alt="linked in logo">
+        <p>&copy; <span id="year"></span> | Greg Nielson | Ohio, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
