@@ -8,11 +8,19 @@
     <meta name="description"
         content="this page lists local business and other organizations that belong to the chamber of commerce.">
     <meta name="author" content="Greg Nielson">
+    <meta property="og:title" content="Sylvania Chamber of Commerce Business Directory">
+    <meta property="og:description"
+        content="This page lists the businesses that have joined the chamber of commerce for the city of Sylvania. Each business is listed with its name, address, phone number, and website.">
+    <meta property="og:image" content="">
+    <meta property="og:locale" content="gregorynielson.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/get-dates.js" defer></script>
     <script src="scripts/nav-menu.js" defer></script>
+    <script src="scripts/member-cards.js" defer></script>
+    <script src="scripts/grid-list-view.js" defer></script>
 </head>
 
 <body>
@@ -22,44 +30,64 @@
             <span class="title">Sylvania</span>
             <span class="subtitle">Chamber of Commerce</span>
         </div>
-        
+
         <a id="menu" class="hamburger" href="#" aria-label="menu button"></a>
         <nav class="menu-list">
             <ul class="navigation">
                 <li>
-                    <a>Home</a>
+                    <a href="#">Home</a>
                 </li>
                 <li>
-                    <a>Directory</a>
+                    <a href="directory.html">Directory</a>
                 </li>
                 <li>
-                    <a>Join</a>
+                    <a href="#">Join</a>
                 </li>
                 <li>
-                    <a>Discover</a>
+                    <a href="#">Discover</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
         <h1>Directory</h1>
-        <section>
+        <div class="grid-list">
+            <button id="grid">
+                <img src="images/grid.svg" alt="grid icon to switch view">
+            </button>
+            <button id="list">
+                <img src="images/list.svg" alt="list icon to switch view">
+            </button>
+        </div>
+        <section id="cards" class="grid">
 
         </section>
     </main>
     <footer>
-        <p class="footer-title">Sylvania Chamber of Commerce</p>
-        <p>5837 Monroe St</p>
-        <p>Sylvania, OH 43560</p>
-        <p>info@sylvaniacc.org</p>
-        <p>(419) 555-8925</p>
-        <img>
-        <img>
-        <img>
-        <p>WDD 231 Class Project</p>
-        <p>Greg Nielson</p>
-        <p>&copy; <span id="year"></span> Sylvania Chamber of Commerce</p>
-        <p id="lastModified"></p>
+        <div>
+            <p class="footer-title">Sylvania Chamber of Commerce</p>
+            <p>5837 Monroe St</p>
+            <p>Sylvania, OH 43560</p>
+            <p>info@sylvaniacc.org</p>
+            <p>(419) 555-8925</p>
+        </div>
+        <div>
+            <a href="https://www.facebook.com" aria-label="link to facebook home page">
+                <img class="facebook" src="images/facebook.svg" alt="facebook logo">
+            </a>
+            <a href="https://www.youtube.com" aria-label="link to youtube home page">
+                <img class="github" src="images/youtube.svg" alt="youtube logo">
+            </a>
+            <a href="https://www.linkedin.com" aria-label="link to linked in home page">
+                <img class="linkedin" src="images/linkedin.svg" alt="linked in logo">
+            </a>
+        </div>
+        <div>
+            <p>WDD 231 Class Project</p>
+            <p>Greg Nielson</p>
+            <p>&copy; <span id="year"></span> Sylvania Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
 </body>
 
