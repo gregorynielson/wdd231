@@ -5,7 +5,7 @@
             "address": "214 Spring Meadows Dr, Sylvania, OH 43560",
             "phoneNumber": "(419) 555-0132",
             "websiteUrl": "www.riverbendfamilydentistry.com",
-            "image": "",
+            "image": "images/dentist.webp",
             "level": "3"
         },
         {
@@ -13,7 +13,7 @@
             "address": "875 Centennial Rd, Sylvania, OH 43560",
             "phoneNumber": "(419) 555-0178",
             "websiteUrl": "www.northvalleybuilds.com",
-            "image": "",
+            "image": "images/construction.webp",
             "level": "3"
         },
         {
@@ -21,7 +21,7 @@
             "address": "642 Central Ave, Sylvania, OH 43560",
             "phoneNumber": "(419) 555-0194",
             "websiteUrl": "www.greenleafsylvania.com",
-            "image": "",
+            "image": "images/garden.webp",
             "level": "2"
         },
         {
@@ -29,7 +29,7 @@
             "address": "55 Maple St, Sylvania, OH 43560",
             "phoneNumber": "(419) 555-0126",
             "websiteUrl": "www.maplestreetroasters.com",
-            "image": "",
+            "image": "images/coffee.webp",
             "level": "2"
         },
         {
@@ -37,15 +37,15 @@
             "address": "301 N Reynolds Rd, Sylvania, OH 43560",
             "phoneNumber": "(419) 555-0145",
             "websiteUrl": "www.horizonitsolutions.com",
-            "image": "",
+            "image": "images/it.webp",
             "level": "3"
         },
         {
-            "name": "Swan Creek Auto Repair",
+            "name": "Silver Creek Auto Repair",
             "address": "1190 Arrowhead Rd, Sylvania, OH 43560",
             "phoneNumber": "(419) 555-0163",
             "websiteUrl": "www.swancreekautorepair.com",
-            "image": "",
+            "image": "images/auto.webp",
             "level": "1"
         },
         {
@@ -53,7 +53,7 @@
             "address": "402 Vicksburg Dr, Sylvania, OH 43560",
             "phoneNumber": "(419) 555-0189",
             "websiteUrl": "www.lakesiderealtysylvania.com",
-            "image": "",
+            "image": "images/realty.webp",
             "level": "3"
         },
         {
@@ -61,7 +61,7 @@
             "address": "720 McCord Rd, Sylvania, OH 43560",
             "phoneNumber": "(413) 555-0151",
             "websiteUrl": "www.sunrisefitness.com",
-            "image": "",
+            "image": "images/fitness.webp",
             "level": "2"
         },
         {
@@ -69,7 +69,7 @@
             "address": "288 N King Rd, Sylvania, OH 43560",
             "phoneNumber": "(413) 555-0117",
             "websiteUrl": "www.heritageprintsign.com",
-            "image": "",
+            "image": "images/print.webp",
             "level": "1"
         },
         {
@@ -77,7 +77,7 @@
             "address": "14 Summit St, Sylvania, OH 43560",
             "phoneNumber": "(413)555-0108",
             "websiteUrl": "www.riverfrontbistro.com",
-            "image": "",
+            "image": "images/bistro.webp",
             "level": "3"
         }
     ]
