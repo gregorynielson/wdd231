@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sylvania Chamber of Commerce | Home</title>
+    <meta name="description"
+        content="this is the home page for the chamber of commerce that has a link to join and displays some members and weather information.">
+    <meta name="author" content="Greg Nielson">
+    <meta property="og:title" content="Sylvania Chamber of Commerce Home Page">
+    <meta property="og:description"
+        content="This is the home page for the Sylvania chamber of commerce, and displays some members and local weather information.">
+    <meta property="og:image" content="https://github.com/gregorynielson/wdd231/blob/main/chamber/images/og-image.png">
+    <meta property="og:url" content="https://www.gregorynielson.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/get-dates.js" defer></script>
+    <script src="scripts/nav-menu.js" defer></script>
+    <script src="scripts/random-cards.js" defer></script>
+    <script src="scripts/current-weather.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/chart-line-up.svg" alt="site logo">
+        <div>
+            <span class="title">Sylvania</span>
+            <span class="subtitle">Chamber of Commerce</span>
+        </div>
+
+        <a id="menu" class="hamburger" href="#" aria-label="menu button"></a>
+        <nav class="menu-list">
+            <ul class="navigation">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="directory.html">Directory</a>
+                </li>
+                <li>
+                    <a href="#">Join</a>
+                </li>
+                <li>
+                    <a href="#">Discover</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/large-hero.webp" media="(min-width: 650px)">
+            <img class="hero" src="images/mobile-hero.webp" alt="photo of city downtown" loading="lazy">
+        </picture>
+        <div>
+            <button class="hero-button">Click Here to Join!</button>
+            <p class="hero-credit">Photo by Land O'Lakes, Inc. on Unsplash</p>
+        </div>
+        <section class="info">
+            <div>
+                <p>current events</p>
+            </div>
+            <div>
+                <p id="current-temp"></p>
+                <figure>
+                    <img id="weather-icon" src="#" alt="#">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            
+            <div>
+                <p>three day weather</p>
+            </div>
+        </section>
+        <section id="cards" class="random">
+
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p class="footer-title">Sylvania Chamber of Commerce</p>
+            <p>5837 Monroe St</p>
+            <p>Sylvania, OH 43560</p>
+            <p>info@sylvaniacc.org</p>
+            <p>(419) 555-8925</p>
+        </div>
+        <div>
+            <a href="https://www.facebook.com" aria-label="link to facebook home page">
+                <img class="facebook" src="images/facebook.svg" alt="facebook logo">
+            </a>
+            <a href="https://www.youtube.com" aria-label="link to youtube home page">
+                <img class="github" src="images/youtube.svg" alt="youtube logo">
+            </a>
+            <a href="https://www.linkedin.com" aria-label="link to linked in home page">
+                <img class="linkedin" src="images/linkedin.svg" alt="linked in logo">
+            </a>
+        </div>
+        <div>
+            <p>WDD 231 Class Project</p>
+            <p>Greg Nielson</p>
+            <p>&copy; <span id="year"></span> Sylvania Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -52,7 +52,14 @@
         display: block;
     }
 
-    
+    .hero-button {
+        top: 90%;
+        left: 35%;
+        transform: translate(-20%, -230%);
+    }
+
+
+
 }
 
 @media screen and (min-width: 800px) {
@@ -60,5 +67,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .random, .info {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
