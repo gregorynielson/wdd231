@@ -26,6 +26,7 @@
     <script src="scripts/nav-menu.js" defer></script>
     <script src="scripts/random-cards.js" defer></script>
     <script src="scripts/current-weather.js" defer></script>
+    <script src="scripts/three-day-forecast.js" defer></script>
 </head>
 
 <body>
@@ -40,7 +41,7 @@
         <nav class="menu-list">
             <ul class="navigation">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a class="on-page" href="index.html">Home</a>
                 </li>
                 <li>
                     <a href="directory.html">Directory</a>
@@ -65,18 +66,25 @@
         </div>
         <section class="info">
             <div>
-                <p>current events</p>
+                <p class="mini-title">Upcoming Events</p>
+                <p>Spring Break: March 30 - April 3</p>
+                <p>Easter: April 5</p>
+                <p>Earth Day: April 22</p>
             </div>
             <div>
+                <p class="mini-title">Today's Weather</p>
                 <p id="current-temp"></p>
                 <figure>
                     <img id="weather-icon" src="#" alt="#">
                     <figcaption></figcaption>
                 </figure>
             </div>
-            
+
             <div>
-                <p>three day weather</p>
+                <p class="mini-title">Three Day Forecast</p>
+                <p id="today-weather"></p>
+                <p id="second-day-weather"></p>
+                <p id="third-day-weather"></p>
             </div>
         </section>
         <section id="cards" class="random">

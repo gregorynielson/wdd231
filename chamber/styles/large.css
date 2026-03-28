@@ -58,7 +58,9 @@
         transform: translate(-20%, -230%);
     }
 
-
+    .on-page {
+        border-bottom: 2px solid var(--secondary-color);
+    }
 
 }
 
