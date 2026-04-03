@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sylvania Chamber of Commerce | Join</title>
+    <meta name="description"
+        content="this page contains information about member levels and a form to join the chamber of commerce.">
+    <meta name="author" content="Greg Nielson">
+    <meta property="og:title" content="Join the Sylvania Chamber of Commerce">
+    <meta property="og:description"
+        content="This page contains information about the different member levels and a form to join the Sylvania Chamber of Commerce.">
+    <!-- <meta property="og:image" content="https://github.com/gregorynielson/wdd231/blob/main/chamber/images/og-image.png"> -->
+    <meta property="og:url" content="https://www.gregorynielson.github.io/wdd231/chamber/join.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"> -->
+    <script src="scripts/get-dates.js" defer></script>
+    <script src="scripts/nav-menu.js" defer></script>
+    <script src="scripts/member-level-modals.js" defer></script>
+    
+</head>
+
+<body>
+    <header>
+        <img src="images/chart-line-up.svg" alt="site logo">
+        <div>
+            <span class="title">Sylvania</span>
+            <span class="subtitle">Chamber of Commerce</span>
+        </div>
+
+        <a id="menu" class="hamburger" href="#" aria-label="menu button"></a>
+        <nav class="menu-list">
+            <ul class="navigation">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="directory.html">Directory</a>
+                </li>
+                <li>
+                    <a class="on-page" href="#">Join</a>
+                </li>
+                <li>
+                    <a href="#">Discover</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="join-page">
+        <h1>Join</h1>
+        <section class="member-form">
+            <h2>Membership Form</h2>
+            <form action="thankyou.html" method="GET">
+            <div class="first-name">
+                <label for="firstname">First Name <span class="required">*</span></label>
+                <input type="text" id="firstname" name="firstname" required>
+            </div>
+            <div class="last-name">
+                <label for="lastname">Last Name <span class="required">*</span></label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+            <div class="organization-title">
+                <label for="orgtitle">Organizational Title</label>
+                <input type="text" id="orgtitle" name="orgtitle">
+            </div>
+            <div class="email-address">
+                <label for="emailadd">Email Address <span class="required">*</span></label>
+                <input type="email" id="emailadd" name="emailadd" required>
+            </div>
+            <div class="phone-number">
+                <label for="phonenum">Phone Number <span class="required">*</span></label>
+                <input type="telephone" id="phonenum" name="phonenum" required>
+            </div>
+            <div class="business-name">
+                <label for="bizname">Business/Organization Name <span class="required">*</span></label>
+                <input type="text" id="bizname" name="bizname" required>
+            </div>
+            <div class="member-level"></div>
+            <div class="description"></div>
+            <div class="form-button">
+                <button type="submit">Join The Chamber</button>
+            </div>
+        </form>
+        </section>
+        
+        <section class="member-levels">
+            <h2>Membership Levels</h2>
+            <div class="member-tier">
+                <p>Non-Profit Membership</p>
+                <div class="member-button">
+                    <button class="level-button open-non-profit">Learn More</button>   
+                </div>
+            </div>
+            <dialog id="non-profit">
+                <h3>Non-Profit Membership</h3>
+                <p>details about the non profit membership level</p>
+                <button class="close-non-profit">X</button>
+            </dialog>
+            <div class="member-tier">
+                <p>Bronze Membership</p>
+                <div class="member-button">
+                    <button class="level-button open-bronze">Learn More</button>   
+                </div>
+            </div>
+            <dialog id="bronze-member">
+                <h3>Bronze Membership</h3>
+                <p>details about the bronze membership level</p>
+                <button class="close-bronze">X</button>
+            </dialog>
+            <div class="member-tier">
+                <p>Silver Membership</p>
+                <div class="member-button">
+                    <button class="level-button open-silver">Learn More</button>   
+                </div>
+            </div>
+            <dialog id="silver-member">
+                <h3>Silver Membership</h3>
+                <p>details about the silver membership level</p>
+                <button class="close-silver">X</button>
+            </dialog>
+            <div class="member-tier">
+                <p>Gold Membership</p>
+                <div class="member-button">
+                    <button class="level-button open-gold">Learn More</button>   
+                </div>
+            </div>
+            <dialog id="gold-member">
+                <h3>Gold Membership</h3>
+                <p>details about the gold membership level</p>
+                <button class="close-gold">X</button>
+            </dialog>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p class="footer-title">Sylvania Chamber of Commerce</p>
+            <p>5837 Monroe St</p>
+            <p>Sylvania, OH 43560</p>
+            <p>info@sylvaniacc.org</p>
+            <p>(419) 555-8925</p>
+        </div>
+        <div>
+            <a href="https://www.facebook.com" aria-label="link to facebook home page">
+                <img class="facebook" src="images/facebook.svg" alt="facebook logo">
+            </a>
+            <a href="https://www.youtube.com" aria-label="link to youtube home page">
+                <img class="github" src="images/youtube.svg" alt="youtube logo">
+            </a>
+            <a href="https://www.linkedin.com" aria-label="link to linked in home page">
+                <img class="linkedin" src="images/linkedin.svg" alt="linked in logo">
+            </a>
+        </div>
+        <div>
+            <p>WDD 231 Class Project</p>
+            <p>Greg Nielson</p>
+            <p>&copy; <span id="year"></span> Sylvania Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
