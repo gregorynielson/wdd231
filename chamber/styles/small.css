@@ -261,7 +261,11 @@ figure {
 form {
     padding: 1rem;
     margin: 3rem;
-    border: 10px solid var(--secondary-color)
+    border: 10px solid var(--secondary-color);
+}
+
+form label {
+    padding-bottom: 5px;
 }
 
 .first-name,
@@ -274,11 +278,17 @@ form {
 .description {
     padding: 1rem;
     display: grid;
-    gap: 5px;
+    gap: 10px;
     color: var(--text-color);
 }
 
-input[type="text"], input[type="email"], input[type="telephone"] {
+.radio-buttons {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
     height: 30px;
     min-width: 100px;
 }
@@ -319,6 +329,7 @@ input[type="text"], input[type="email"], input[type="telephone"] {
     color: var(--text-color);
     background-color: var(--primary-color);
     margin: 1rem 3rem 1rem 3rem;
+    max-height: 100px;
 
 }
 
@@ -339,6 +350,7 @@ input[type="text"], input[type="email"], input[type="telephone"] {
     width: 125px;
     color: var(--accent-color);
     margin: 0;
+    border: 3px solid;
 }
 
 .level-button:hover {
@@ -351,6 +363,25 @@ input[type="text"], input[type="email"], input[type="telephone"] {
     background-color: var(--accent-color);
     color: var(--text-color);
     text-align: center;
+}
+
+.member-tier, .level-button {
+    animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {border-color: var(--text-color);}
+    100% {border-color: var(--secondary-color);}
+}
+
+#results {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.thanks-content {
+    font-size: 1.5rem;
+    
 }
 
 footer {

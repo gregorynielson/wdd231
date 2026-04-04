@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sylvania Chamber of Commerce | Home</title>
+    <title>Sylvania Chamber of Commerce | Join</title>
     <meta name="description"
-        content="this is the home page for the chamber of commerce that has a link to join and displays some members and weather information.">
+        content="this page contains information about member levels and a form to join the chamber of commerce.">
     <meta name="author" content="Greg Nielson">
-    <meta property="og:title" content="Sylvania Chamber of Commerce Home Page">
+    <meta property="og:title" content="Join the Sylvania Chamber of Commerce">
     <meta property="og:description"
-        content="This is the home page for the Sylvania chamber of commerce, and displays some members and local weather information.">
-    <meta property="og:image" content="https://github.com/gregorynielson/wdd231/blob/main/chamber/images/og-image.png">
-    <meta property="og:url" content="https://github.com/gregorynielson/wdd231/blob/main/chamber/images/index-og-image.png">
+        content="This page contains information about the different member levels and a form to join the Sylvania Chamber of Commerce.">
+    <!-- <meta property="og:image" content="https://github.com/gregorynielson/wdd231/blob/main/chamber/images/og-image.png"> -->
+    <meta property="og:url" content="https://www.gregorynielson.github.io/wdd231/chamber/join.html">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -24,9 +24,9 @@
         rel="stylesheet">
     <script src="scripts/get-dates.js" defer></script>
     <script src="scripts/nav-menu.js" defer></script>
-    <script src="scripts/random-cards.js" defer></script>
-    <script src="scripts/current-weather.js" defer></script>
-    <script src="scripts/three-day-forecast.js" defer></script>
+    <script src="scripts/form-data.js" defer></script>
+    <!-- <script src="scripts/form-timestamp.js" defer></script> -->
+    
 </head>
 
 <body>
@@ -41,7 +41,7 @@
         <nav class="menu-list">
             <ul class="navigation">
                 <li>
-                    <a class="on-page" href="index.html">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
                     <a href="directory.html">Directory</a>
@@ -56,42 +56,9 @@
         </nav>
     </header>
     <main>
-        <picture>
-            <source srcset="images/large-hero.webp" media="(min-width: 650px)">
-            <img class="hero" src="images/mobile-hero.webp" alt="photo of city downtown" loading="lazy">
-        </picture>
-        <div>
-            <button class="hero-button">Click Here to Join!</button>
-            <p class="hero-credit">Photo by Land O'Lakes, Inc. on Unsplash</p>
-        </div>
-        <h1>Home</h1>
-        <section class="info">
-            <div>
-                <p class="mini-title">Upcoming Events</p>
-                <p>Spring Break: March 30 - April 3</p>
-                <p>Easter: April 5</p>
-                <p>Earth Day: April 22</p>
-            </div>
-            <div>
-                <p class="mini-title">Today's Weather</p>
-                <p id="current-temp"></p>
-                <figure>
-                    <img id="weather-icon" src="#" alt="#">
-                    <figcaption></figcaption>
-                </figure>
-            </div>
+        <h1>Thank You For Joining!</h1>
 
-            <div>
-                <p class="mini-title">Three Day Forecast</p>
-                <p id="today-weather"></p>
-                <p id="second-day-weather"></p>
-                <p id="third-day-weather"></p>
-            </div>
-        </section>
-        <section id="cards" class="random">
-
-        </section>
-
+        <div id="results"></div>
     </main>
     <footer>
         <div>
