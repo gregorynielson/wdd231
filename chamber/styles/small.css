@@ -294,7 +294,7 @@ input[type="text"], input[type="email"], input[type="tel"] {
 }
 
 .required {
-    color: rgb(212, 0, 0);
+    color: rgb(149, 0, 0);
 }
 
 .form-button {
@@ -362,6 +362,9 @@ input[type="text"], input[type="email"], input[type="tel"] {
     border: 5px solid var(--primary-color);
     background-color: var(--accent-color);
     color: var(--text-color);
+}
+
+#non-profit h3, #non-profit h4, #bronze-member h3, #bronze-member h4, #silver-member h3, #silver-member h4, #gold-member h3, #gold-member h4 {
     text-align: center;
 }
 
@@ -370,7 +373,7 @@ input[type="text"], input[type="email"], input[type="tel"] {
 }
 
 @keyframes pulse {
-    0% {border-color: var(--text-color);}
+    0% {border-color: var(--primary-color);}
     100% {border-color: var(--secondary-color);}
 }
 
