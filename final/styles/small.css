@@ -1,0 +1,142 @@
+:root {
+    --primary-color: #1c3d2b;
+    --secondary-color: #0f2a1d;
+    --tertiary-color: #f2c94c;
+    --accent-color: #e6f0ea;
+    --primary-text: #1a1a1a;
+    font-family: "Dancing Script", cursive;
+    font-family: "National Park", sans-serif;
+    font-weight: 400;
+    font-family: normal;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 50px auto 44px;
+    position: relative;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 1rem;
+    border-bottom: 5px solid var(--tertiary-color);
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    font-family: "Dancing Script";
+}
+
+#menu {
+    display: block;
+    text-decoration: none;
+    text-align: right;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-top: 10px;
+    background-color: var(--primary-color);
+
+}
+
+.hamburger::before {
+    content: "\2630";
+    color: var(--tertiary-color);
+    font-size: 3rem;
+}
+
+nav {
+    max-width: 640px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    z-index: 2;
+}
+
+.menu-list {
+    display: none;
+}
+
+.menu-list.show {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navigation li {
+    display: none;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+}
+
+a:link,
+a:visited {
+    color: var(--background-color);
+}
+
+.show li {
+    display: block;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.on-page {
+    background-color: var(--secondary-color);
+    border-bottom: 2px solid var(--tertiary-color);
+}
+
+main {
+    background-color: var(--accent-color);
+    padding: 1rem;
+    font-family: "National Park";
+}
+
+.main {
+    font-family: "National Park";
+}
+
+h2 {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--tertiary-color);
+}
+
+main p {
+    color: var(--primary-text);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+.facebook,
+.github,
+.youtube,
+.linkedin {
+    width: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
