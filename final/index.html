@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golfing for Good | Home</title>
+    <meta name="description"
+        content="this is the home page for Golfing for Good, a charity golf club with various rotating weekend events.">
+    <meta name="author" content="Greg Nielson">
+    <meta property="og:title" content="Golfing for Good Home Page">
+    <meta property="og:description"
+        content="This is the home page for the Sylvania chamber of commerce, and displays some members and local weather information.">
+    <meta property="og:image" content="https://www.gregorynielson.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://www.gregorynielson.github.io/wdd231/chamber/index.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    
+    <script src="scripts/get-dates.js" defer></script>
+    <script src="scripts/nav-menu.js" defer></script>
+    <script src="scripts/course-cards.js" defer></script>
+    
+</head>
+
+<body>
+    <header>
+        <img src="#" alt="site logo">
+        <div>
+            <span class="title">Golfing for Good</span>
+        </div>
+
+        <a id="menu" class="hamburger" href="#" aria-label="menu button"></a>
+        <nav class="menu-list">
+            <ul class="navigation">
+                <li>
+                    <a class="on-page" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Information</a>
+                </li>
+                <li>
+                    <a href="#">Join</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <picture>
+            <source srcset="#" media="(min-width: 650px)">
+            <img class="hero" src="#" alt="photo of golf course" loading="lazy">
+        </picture>
+
+        <h1>Home</h1>
+        <div class="carousel">
+            <div class="carousel-track" id="card-track">
+
+            </div>
+        </div>
+        <section class="info">
+            <div>
+                <p class="mini-title">Upcoming Events</p>
+                <p>Spring Break: March 30 - April 3</p>
+                <p>Easter: April 5</p>
+                <p>Earth Day: April 22</p>
+            </div>
+            <div>
+                <p class="mini-title">Today's Weather</p>
+                <p id="current-temp"></p>
+                <figure>
+                    <img id="weather-icon" src="#" alt="#">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+
+            <div>
+                <p class="mini-title">Three Day Forecast</p>
+                <p id="today-weather"></p>
+                <p id="second-day-weather"></p>
+                <p id="third-day-weather"></p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p class="footer-title">Golfing for Good</p>
+            <p>LA County</p>
+            <p>info@golfingforgood.org</p>
+            <p>(213) 555-8925</p>
+        </div>
+        <div>
+            <a href="https://www.facebook.com" aria-label="link to facebook home page">
+                <img class="facebook" src="images/facebook.svg" alt="facebook logo">
+            </a>
+            <a href="https://www.youtube.com" aria-label="link to youtube home page">
+                <img class="youtube" src="images/youtube.svg" alt="youtube logo">
+            </a>
+            <a href="https://github.com/gregorynielson/wdd231/final" aria-label="link to github repository">
+                <img class="github" src="images/github.svg" alt="github logo">
+            </a>
+            <a href="https://www.linkedin.com" aria-label="link to linked in home page">
+                <img class="linkedin" src="images/linkedin.svg" alt="linked in logo">
+            </a>
+        </div>
+        <div>
+            <p>WDD 231 Final Project</p>
+            <p>Greg Nielson</p>
+            <p>youtube video link</p>
+            <p>&copy; <span id="year"></span> Golfing for Good</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
