@@ -8,10 +8,7 @@ const frequentVisits = document.querySelector(".visits");
 let lastVisit = Number(window.localStorage.getItem("lastPageVisit-ls"));
 const currentDay = Date.now();
 
-if (lastVisit == currentDay)
-{
-    frequentVisits.textContent = `Welcome! Let us know if you have questions.`;
-}
+
 
 if (lastVisit) {
     const milliseconds = today - parseInt(lastVisit);
@@ -28,5 +25,8 @@ if (lastVisit) {
         frequentVisits.textContent = `You last visited ${daysSince} days ago.`;
     }; 
 }
+
+frequentVisits.textContent = `Welcome! Let us know if you have questions.`;
+
 
 localStorage.setItem("lastPageVisit-ls", currentDay);
