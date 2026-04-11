@@ -10,13 +10,14 @@ const currentDay = Date.now();
 
 
 
-if (lastVisit) {
-    const milliseconds = today - parseInt(lastVisit);
-
+if (!lastVisit) {
+    frequentVisits.textContent = `Welcome! Let us know if you have questions.`;
+} else {
+    const milliseconds = currentDay - parseInt(lastVisit);
     const msDay = 24 * 60 * 60 * 1000;
     const daysSince = Math.floor(milliseconds / msDay);
 
-    if (daysSince == 0)
+    if (daysSince < 1)
     {
         frequentVisits.textContent = `Back so soon! Awesome!`;
     }else if (daysSince == 1) {
@@ -25,8 +26,6 @@ if (lastVisit) {
         frequentVisits.textContent = `You last visited ${daysSince} days ago.`;
     }; 
 }
-
-frequentVisits.textContent = `Welcome! Let us know if you have questions.`;
 
 
 localStorage.setItem("lastPageVisit-ls", currentDay);
