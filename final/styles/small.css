@@ -112,8 +112,60 @@ main {
     font-family: "National Park";
 }
 
-.main {
+h1 {
+    color: var(--primary-text)
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+}
+
+.carousel-track div {
+    min-width: 250px;
+    background: var(--primary-color);
+    border-radius: 8px;
+    padding: 1rem;
+    flex-shrink: 0;
+}
+
+.course-card-name {
+    color: var(--tertiary-color);
+    font-size: 1.3rem;
+}
+
+.carousel-track div p {
+    color: var(--accent-color);
+    font-size: 0.8rem;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* .main {
     font-family: "National Park";
+} */
+
+
+.cubeimg {
+    background-color: var(--tertiary-color);
+}
+
+.cubetext {
+    
 }
 
 h2 {
@@ -128,8 +180,11 @@ main p {
 footer {
     background-color: var(--primary-color);
     color: var(--accent-color);
-    text-align: center;
     padding: 1rem;
+}
+
+.footer-title {
+    color: var(--tertiary-color);
 }
 
 .facebook,
@@ -139,4 +194,8 @@ footer {
     width: 50px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.social-icons {
+    display: flex;
 }

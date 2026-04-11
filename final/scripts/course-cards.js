@@ -26,14 +26,14 @@ const displayCourses = (courses) => {
         img.alt = `photo of ${course.name}`;
         img.loading = "lazy";
         name.innerHTML = `<span class="course-card-name">${course.name}</span>`;
-        par.innerHTML = `Par: ${course.par}`;
+        par.innerHTML = `<b>Par:</b> ${course.par}`;
         address.innerHTML = course.address;
-        sponsor.innerHTML = `Main Sponsor: ${course.sponsor}`;
+        sponsor.innerHTML = `<b>Main Sponsor:</b> ${course.sponsor}`;
 
         card.appendChild(img);
         card.appendChild(name);
-        card.appendChild(par);
         card.appendChild(address);
+        card.appendChild(par);
         card.appendChild(sponsor);
 
         container.appendChild(card);
