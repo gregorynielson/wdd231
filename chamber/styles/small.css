@@ -95,6 +95,10 @@ nav a {
     text-decoration: none;
 }
 
+.on-page {
+    background-color: #001f4b;
+}
+
 nav a:hover {
     background-color: var(--secondary-color);
     color: var(--text-color);
@@ -117,7 +121,8 @@ main {
     background-color: var(--accent-color);
 }
 
-h1, h2 {
+h1,
+h2 {
     color: var(--text-color);
     padding: 1rem;
 }
@@ -288,7 +293,9 @@ form label {
     gap: 10px;
 }
 
-input[type="text"], input[type="email"], input[type="tel"] {
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
     height: 30px;
     min-width: 100px;
 }
@@ -313,14 +320,15 @@ input[type="text"], input[type="email"], input[type="tel"] {
     color: var(--primary-color);
 }
 
-.member-form h2, .member-levels h2 {
+.member-form h2,
+.member-levels h2 {
     text-align: center;
 }
 
 .member-levels {
-    
+
     display: grid;
-    
+
 }
 
 .member-tier {
@@ -358,23 +366,60 @@ input[type="text"], input[type="email"], input[type="tel"] {
     color: var(--secondary-color);
 }
 
-#non-profit, #bronze-member, #silver-member, #gold-member {
+#non-profit,
+#bronze-member,
+#silver-member,
+#gold-member,
+#marinamodal,
+#lakeshoremodal,
+#marketmodal,
+#lighthousemodal,
+#baysidemodal,
+#museummodal,
+#willowmodal,
+#piermodal {
     border: 5px solid var(--primary-color);
     background-color: var(--accent-color);
     color: var(--text-color);
 }
 
-#non-profit h3, #non-profit h4, #bronze-member h3, #bronze-member h4, #silver-member h3, #silver-member h4, #gold-member h3, #gold-member h4 {
+#non-profit h3,
+#non-profit h4,
+#bronze-member h3,
+#bronze-member h4,
+#silver-member h3,
+#silver-member h4,
+#gold-member h3,
+#gold-member h4,
+#marinamodal,
+#lakeshoremodal,
+#marketmodal,
+#lighthousemodal,
+#baysidemodal,
+#museummodal,
+#willowmodal,
+#piermodal {
     text-align: center;
 }
 
-.member-tier, .level-button {
+.hours-cost {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.member-tier,
+.level-button {
     animation: pulse 2s infinite alternate;
 }
 
 @keyframes pulse {
-    0% {border-color: var(--primary-color);}
-    100% {border-color: var(--secondary-color);}
+    0% {
+        border-color: var(--primary-color);
+    }
+
+    100% {
+        border-color: var(--secondary-color);
+    }
 }
 
 #results {
@@ -385,7 +430,67 @@ input[type="text"], input[type="email"], input[type="tel"] {
 
 .thanks-content {
     font-size: 1.5rem;
+
+}
+
+#place-cards div {
+    border: 3px solid var(--primary-color);
+    padding: 1rem;
+    margin: 1rem;
+
+    display: grid;
+    grid-template-areas:
+        "name"
+        "photo"
+        "description"
+        "address"
+        "button";
+}
+
+#place-cards div h2 {
+    grid-area: name;
+}
+
+#place-cards div figure {
+    grid-area: photo;
     
+}
+
+#place-cards div figure img {
+    width: 100%;
+    max-width: 300px;
+}
+
+#place-cards div p {
+    text-align: center;
+    grid-area: description;
+    color: var(--text-color);
+}
+
+#place-cards div address {
+    text-align: center;
+    padding: 1rem 1rem 2rem 1rem;
+    grid-area: address;
+    color: var(--text-color);
+}
+
+#place-cards div button {
+    margin: 0 auto;
+    width: 200px;
+    grid-area: button;
+}
+
+#place-cards div button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.visits {
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem;
+    border-bottom: 3px solid var(--secondary-color);
+    color: var(--text-color);
 }
 
 footer {
@@ -405,4 +510,8 @@ footer {
 .footer-title {
     color: var(--secondary-color);
     font-size: 1.2rem;
+}
+
+.social-icons {
+    display: flex;
 }

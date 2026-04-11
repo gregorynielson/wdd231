@@ -11,20 +11,24 @@
     <meta property="og:title" content="Sylvania Chamber of Commerce - Discover the City">
     <meta property="og:description"
         content="This page contains information about the City of Sylvania and gives information on places and events of interest.">
-    <!-- <meta property="og:image" content="https://www.gregorynielson.github.io/wdd231/chamber/join-og-image.png"> -->
+    <meta property="og:image" content="">
     <meta property="og:url" content="https://www.gregorynielson.github.io/wdd231/chamber/discover.html.html">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet"> -->
+        rel="stylesheet">
     <script src="scripts/get-dates.js" defer></script>
     <script src="scripts/nav-menu.js" defer></script>
-    
+    <script src="scripts/places-of-interest.js" defer type="module"></script>
+    <script src="scripts/frequent-visit.js" defer></script>
+    <script src="scripts/discover-modals.js" defer type="module"></script>
+
 </head>
 
 <body>
@@ -54,7 +58,61 @@
         </nav>
     </header>
     <main>
-        
+        <h1>Discover</h1>
+        <section id="place-cards">
+
+        </section>
+        <div>
+            <p class="visits"></p>
+        </div>
+        <dialog id="marinamodal">
+            <h3 class="marinah3"></h3>
+            <p class="marinahours"></p>
+            <p class="marinacost"></p>
+            <button class="closemarina">X</button>
+        </dialog>
+        <dialog id="lakeshoremodal">
+            <h3 class="lakeshoreh3"></h3>
+            <p class="lakeshorehours"></p>
+            <p class="lakeshorecost"></p>
+            <button class="closelakeshore">X</button>
+        </dialog>
+        <dialog id="marketmodal">
+            <h3 class="marketh3"></h3>
+            <p class="markethours"></p>
+            <p class="marketcost"></p>
+            <button class="closemarket">X</button>
+        </dialog>
+        <dialog id="lighthousemodal">
+            <h3 class="lighthouseh3"></h3>
+            <p class="lighthousehours"></p>
+            <p class="lighthousecost"></p>
+            <button class="closelighthouse">X</button>
+        </dialog>
+        <dialog id="baysidemodal">
+            <h3 class="baysideh3"></h3>
+            <p class="baysidehours"></p>
+            <p class="baysidecost"></p>
+            <button class="closebayside">X</button>
+        </dialog>
+        <dialog id="museummodal">
+            <h3 class="museumh3"></h3>
+            <p class="museumhours"></p>
+            <p class="museumcost"></p>
+            <button class="closemuseum">X</button>
+        </dialog>
+        <dialog id="willowmodal">
+            <h3 class="willowh3"></h3>
+            <p class="willowhours"></p>
+            <p class="willowcost"></p>
+            <button class="closewillow">X</button>
+        </dialog>
+        <dialog id="piermodal">
+            <h3 class="pierh3"></h3>
+            <p class="pierhours"></p>
+            <p class="piercost"></p>
+            <button class="closepier">X</button>
+        </dialog>
     </main>
     <footer>
         <div>
@@ -64,7 +122,7 @@
             <p>info@sylvaniacc.org</p>
             <p>(419) 555-8925</p>
         </div>
-        <div>
+        <div class="social-icons">
             <a href="https://www.facebook.com" aria-label="link to facebook home page">
                 <img class="facebook" src="images/facebook.svg" alt="facebook logo">
             </a>
@@ -82,7 +140,7 @@
             <p id="lastModified"></p>
         </div>
     </footer>
-    
+
 </body>
 
 </html>
