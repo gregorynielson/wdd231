@@ -8,25 +8,30 @@
     <meta name="description"
         content="this is the home page for Golfing to Give, a charity golf club with various rotating weekend events.">
     <meta name="author" content="Greg Nielson">
-    <meta property="og:title" content="Golfing for Good Home Page">
+    <meta property="og:title" content="Golfing to Give Home Page">
     <meta property="og:description"
         content="This is the home page for Golfing to Give, with a quick overview of the club and what it offers.">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="https://gregorynielson.github.io/wdd231/final/index-og.png">
     <meta property="og:url" content="https://www.gregorynielson.github.io/wdd231/final/index.html">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap" rel="stylesheet">
     <script src="scripts/get-dates.js" defer></script>
     <script src="scripts/nav-menu.js" defer></script>
-    <script src="scripts/course-cards.js" defer></script>
+    <script src="scripts/event-modals.js" defer></script>
+    <script src="scripts/expected-weather.js" defer></script>
+    <script src="scripts/course-cards.js" type="module"></script>
     
 </head>
 
 <body>
     <header>
-        <img src="#" alt="site logo">
+        <img src="images/logo.svg" alt="site logo" loading="lazy">
         <div>
             <span class="title">Golfing to Give</span>
         </div>
@@ -48,28 +53,84 @@
     </header>
     <main>
         <picture>
-            <source srcset="#" media="(min-width: 650px)">
-            <img class="hero" src="#" alt="photo of golf course" loading="lazy">
+            <source srcset="images/hero-desktop.webp" media="(min-width: 650px)">
+            <img class="hero" src="images/hero-desktop.webp" alt="photo of golf course" loading="lazy">
         </picture>
 
         <h1>Home</h1>
+        <section class="next-event">
+            <div class="event-date">
+                <h2>Next Event</h2>
+                <p><span class="event">Where: </span>Shandin Hills Golf Club</p>
+                <p><span class="event">When: </span>Saturday, April 18</p>
+                <p><span class="event">Open Spots: </span>All Tee Times Booked!</p>
+                <div class="all-events">
+                    <button id="all-events">See All Events</button>
+                </div>
+                <dialog id="every-event">
+                    <div class="every-event-content">
+                        <div class="every-event-button">
+                            <button class="close-event">X</button>
+                        </div>
+                        <h2>All 2026 Events</h2>
+                        <p>Jan 24: Dos Lagos Golf Club</p>
+                        <p>Feb 21: Shadow Glen Golf Club</p>
+                        <p>Mar 7: Hobble Creek Golf Course</p>
+                        <p>Mar 28: The Links at Terranea</p>
+                        <p>Apr 18: Shandin Hills Golf Club</p>
+                        <p>May 2: Washatch Mountain Golf Course</p>
+                        <p>May 16: Hobble Creek Golf Course</p>
+                        <p>May 30: The Links at Terranea</p>
+                        <p>June 13: Shandin Hills Golf Club</p>
+                        <p>June 27: Washatch Mountain Golf Course</p>
+                        <p>July 11: Dos Lagos Golf Club</p>
+                        <p>July 18: Shadow Glen Golf Club</p>
+                        <p>July 25: Hobble Creek Golf Course</p>
+                        <p>Aug 8: The Links at Terranea</p>
+                        <p>Aug 22: Shandin Hills Golf Club</p>
+                        <p>Aug 29: Washatch Mountain Golf Course</p>
+                        <p>Sep 12: Hobble Creek Golf Course</p>
+                        <p>Sep 26: The Links at Terranea</p>
+                        <p>Oct 17: Shandin Hills Golf Club</p>
+                        <p>Nov 7: Washatch Mountain Golf Course</p>
+                        <p>Dec 12: Dos Lagos Golf Club</p>
+                    </div>
+                </dialog>
+            </div>
+            <div class="event-weather">
+                <h2>Forecasted Weather</h2>
+                <p id="current-temp"></p>
+                <figure>
+                    <img id="weather-icon" src="#" alt="#" loading="lazy">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+        </section>
         <div class="carousel">
             <div class="carousel-track" id="card-track">
 
             </div>
         </div>
         <section class="cubes">
-            <div class="cubeimg">
-                <img src="#" alt="picture" loading="lazy">
+            <div class="cubeimg imgone">
+                <img src="images/golfer.webp" alt="picture of man golfing" loading="lazy">
             </div>
-            <div class="cubetext">
-                <p>lorem ipsum...</p>
+            <div class="cubetext cubecharity">
+                <h2>Charities and Sponsors</h2>
+                <p>The charities we support represent a wide range of meaningful causes, from helping families in need to protecting the environment.</p>
+                <a href="information.html" class="home-button">Learn More</a>
+                <a href="join.html" class="home-button">Nominate a Charity</a>
+                <a href="join.html" class="home-button">Apply to Sponsor</a>
             </div>
-            <div class="cubetext">
-                <p>lorem ipsum...</p>
+            <div class="cubeimg imgtwo">
+                <img src="images/lake-hole.webp" alt="picture of golf hole surrounded by a lake" loading="lazy">
             </div>
-            <div class="cubeimg">
-                <img src="#" alt="picture" loading="lazy">
+            <div class="cubetext cubemember">
+                <h2>Memberships and Tournaments</h2>
+                <p>The membership is designed to make participating simple and rewarding.</p>
+                <a href="information.html" class="home-button">Learn More</a>
+                <a href="join.html" class="home-button">Become a Member</a>
+                <a href="join.html" class="home-button">Tournament Registration</a>
             </div>
         </section>
 
@@ -77,29 +138,35 @@
     <footer>
         <div>
             <p class="footer-title">Golfing to Give</p>
-            <p>LA County</p>
+            <p>8471 N Coast Hwy</p>
+            <p>Laguna Beach, CA 92651</p>
             <p>info@golfingtogive.org</p>
             <p>(213) 555-8925</p>
         </div>
         <div class="social-icons">
             <a href="https://www.facebook.com" aria-label="link to facebook home page">
-                <img class="facebook" src="images/facebook.svg" alt="facebook logo">
+                <img class="facebook" src="images/facebook.svg" alt="facebook logo" loading="lazy">
             </a>
             <a href="https://www.youtube.com" aria-label="link to youtube home page">
-                <img class="youtube" src="images/youtube.svg" alt="youtube logo">
+                <img class="youtube" src="images/youtube.svg" alt="youtube logo" loading="lazy">
             </a>
             <a href="https://github.com/gregorynielson/wdd231/final" aria-label="link to github repository">
-                <img class="github" src="images/github.svg" alt="github logo">
+                <img class="github" src="images/github.svg" alt="github logo" loading="lazy">
             </a>
             <a href="https://www.linkedin.com" aria-label="link to linked in home page">
-                <img class="linkedin" src="images/linkedin.svg" alt="linked in logo">
+                <img class="linkedin" src="images/linkedin.svg" alt="linked in logo" loading="lazy">
             </a>
         </div>
         <div>
             <p>WDD 231 Final Project</p>
             <p>Greg Nielson</p>
-            <p>youtube video link</p>
-            <p>&copy; <span id="year"></span> Golfing for Good</p>
+            <a href="https://www.youtube.com" aria-label="link to Java Script youtube video">
+                <p>Java Script Video</p>
+            </a>
+            <a href="https://www.gregorynielson.github.io/wdd231/final/attributions.html" aria-label="link to attributions page">
+                <p>Attributions Page</p>
+            </a>
+            <p>&copy; <span id="year"></span> Golfing to Give</p>
             <p id="lastModified"></p>
         </div>
     </footer>

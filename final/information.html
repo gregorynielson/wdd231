@@ -4,29 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golfing to Give | Home</title>
+    <title>Golfing to Give | Information</title>
     <meta name="description"
-        content="this is the home page for Golfing to Give, a charity golf club with various rotating weekend events.">
+        content="This is the information page for Golfing to Give, with information on memberships, courses, charities, and sponsors.">
     <meta name="author" content="Greg Nielson">
-    <meta property="og:title" content="Golfing for Good Home Page">
+    <meta property="og:title" content="Golfing to Give Information Page">
     <meta property="og:description"
-        content="This is the home page for Golfing to Give, with a quick overview of the club and what it offers.">
-    <meta property="og:image" content="">
+        content="This is the information page for Golfing to Give, with information on memberships, courses, charities, and sponsors.">
+    <meta property="og:image" content="https://gregorynielson.github.io/wdd231/final/info-og.png">
     <meta property="og:url" content="https://www.gregorynielson.github.io/wdd231/final/information.html">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap" rel="stylesheet">
     <script src="scripts/get-dates.js" defer></script>
     <script src="scripts/nav-menu.js" defer></script>
-    <script src="scripts/course-cards.js" defer></script>
+    <script src="scripts/course-cards.js" type="module"></script>
+    <script src="scripts/sponsor-cards.js" type="module"></script>
     
 </head>
 
 <body>
     <header>
-        <img src="#" alt="site logo">
+        <img src="images/logo.svg" alt="site logo" loading="lazy">
         <div>
             <span class="title">Golfing to Give</span>
         </div>
@@ -46,51 +50,72 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="info-page">
         <h1>Information</h1>
         <section class="org-info">
             <h2>About Golfing to Give</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sit nobis vitae suscipit quos earum nemo laudantium qui et hic, dolores sint rem, quae quasi dolorem cum reprehenderit accusantium officiis!</p>
+            <p>At our core, we believe golf can be more than just a game—it can be a force for good. Our club brings together players of all skill levels to compete in tournaments hosted at a variety of courses, all while supporting meaningful causes. Each event is designed to create a fun, competitive atmosphere where every swing contributes to something bigger, with proceeds benefiting local and national charities. By partnering with generous sponsors and passionate players, we're building a community that shares a love for golf and a commitment to making a positive impact both on and off the course.</p>
         </section>
         <section class="member-info">
             <h2>Memberships</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est debitis voluptatem dolorum quo dolorem! Quo sint non, porro, et enim reiciendis eveniet esse autem, officia fugit asperiores labore! Sunt, aliquam.</p>
+            <p>The membership is designed to make participating simple and rewarding. With a single annual membership, players receive entry into all scheduled tournaments throughout the season, eliminating the need for separate event registrations. Members also enjoy priority access to tee times, ensuring a smooth and convenient experience on tournament days. By joining, you're not only gaining exclusive access to great golf events—you're also supporting the charitable mission behind every round played.</p>
+            <div class="member-info-button">
+                <a href="join.html" class="info-button">Become a Member</a>
+            </div>
         </section>
         <section class="course-info">
             <h2>Our Courses</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae maiores id perferendis dolorem tempore tenetur excepturi, magni ea molestias autem consectetur sed minus, aspernatur necessitatibus eum deserunt debitis commodi odit.</p>
+            <p>Our featured courses are carefully selected to deliver an exceptional experience for every event. Each location offers a unique blend of scenic beauty, thoughtful design, and well-maintained conditions that appeal to golfers of all skill levels. From wide, inviting fairways to strategically placed hazards, these courses strike the perfect balance between fun and challenge—rewarding great shots while keeping every round engaging from the first tee to the final putt.</p>
+            <div class="carousel">
+                <div class="carousel-track" id="card-track"></div>
+            </div>
         </section>
         <section class="charity-info">
             <h2>Charities We Help</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos saepe deserunt, cum hic repellat, alias doloremque vel porro facilis sequi nobis in. Dolore architecto doloremque aut, laboriosam delectus quisquam explicabo?</p>
+            <p>The charities we support represent a wide range of meaningful causes, from helping families in need and supporting youth programs to advancing healthcare and protecting the environment. Each organization is chosen for the real, measurable impact it makes in people's lives and communities. Through every tournament, players contribute to efforts that provide essential resources, create opportunities, and improve lives—turning each round of golf into a chance to make a lasting difference.</p>
+        </section>
+        <section class="sponsor-info">
+            <h2>Our Sponsors</h2>
+            <div class="sponsor-button-holder">
+                <button id="golf-sponsor" class="sponsor-button">Golf Industry</button>
+                <button id="national-sponsor" class="sponsor-button">National</button>
+                <button id="local-sponsor" class="sponsor-button">Local</button>
+            </div>
+            <div id="sponsor-cards"></div>
         </section>
     </main>
     <footer>
         <div>
             <p class="footer-title">Golfing to Give</p>
-            <p>LA County</p>
+            <p>8471 N Coast Hwy</p>
+            <p>Laguna Beach, CA 92651</p>
             <p>info@golfingtogive.org</p>
             <p>(213) 555-8925</p>
         </div>
         <div class="social-icons">
             <a href="https://www.facebook.com" aria-label="link to facebook home page">
-                <img class="facebook" src="images/facebook.svg" alt="facebook logo">
+                <img class="facebook" src="images/facebook.svg" alt="facebook logo" loading="lazy">
             </a>
             <a href="https://www.youtube.com" aria-label="link to youtube home page">
-                <img class="youtube" src="images/youtube.svg" alt="youtube logo">
+                <img class="youtube" src="images/youtube.svg" alt="youtube logo" loading="lazy">
             </a>
             <a href="https://github.com/gregorynielson/wdd231/final" aria-label="link to github repository">
-                <img class="github" src="images/github.svg" alt="github logo">
+                <img class="github" src="images/github.svg" alt="github logo" loading="lazy">
             </a>
             <a href="https://www.linkedin.com" aria-label="link to linked in home page">
-                <img class="linkedin" src="images/linkedin.svg" alt="linked in logo">
+                <img class="linkedin" src="images/linkedin.svg" alt="linked in logo" loading="lazy">
             </a>
         </div>
         <div>
             <p>WDD 231 Final Project</p>
             <p>Greg Nielson</p>
-            <p>youtube video link</p>
-            <p>&copy; <span id="year"></span> Golfing for Good</p>
+            <a href="https://www.youtube.com" aria-label="link to Java Script youtube video">
+                <p>Java Script Video</p>
+            </a>
+            <a href="https://www.gregorynielson.github.io/wdd231/final/attributions.html" aria-label="link to attributions page">
+                <p>Attributions Page</p>
+            </a>
+            <p>&copy; <span id="year"></span> Golfing to Give</p>
             <p id="lastModified"></p>
         </div>
     </footer>

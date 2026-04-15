@@ -1,19 +1,11 @@
 
-const container = document.querySelector("#card-track")
+import {courses} from "../data/courses.mjs"
 
-async function getCourseData() {
-    const response = await fetch("data/courses.json");
-    const data = await response.json();
-    // console.log(data.companies);
-    displayCourses(data.courses);
-    return data;
-}
 
-getCourseData();
-
+const container = document.querySelector("#card-track");
 const displayCourses = (courses) => {
     courses.forEach((course) => {
-        const container = document.querySelector("#card-track");
+        
 
         let card = document.createElement("div");
         let img = document.createElement("img");
@@ -30,6 +22,13 @@ const displayCourses = (courses) => {
         address.innerHTML = course.address;
         sponsor.innerHTML = `<b>Main Sponsor:</b> ${course.sponsor}`;
 
+        img.classList.add("course-img");
+        name.classList.add("course-name");
+        par.classList.add("course-par");
+        address.classList.add("course-address");
+        sponsor.classList.add("course-sponsor");
+
+
         card.appendChild(img);
         card.appendChild(name);
         card.appendChild(address);
@@ -37,6 +36,9 @@ const displayCourses = (courses) => {
         card.appendChild(sponsor);
 
         container.appendChild(card);
-    })
+        
+    });
     container.innerHTML += container.innerHTML;
 }
+
+displayCourses(courses);

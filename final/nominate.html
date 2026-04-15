@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golfing to Give | Confirmation</title>
+    <meta name="description"
+        content="this is the confirmation page for nominating a charity to be supported by Golfing to Give.">
+    <meta name="author" content="Greg Nielson">
+    <meta property="og:title" content="Golfing to Give Charity Nomination Confirmation Page">
+    <meta property="og:description"
+        content="This is the confirmation page for nominating a charity to be supported by Golfing to Give.">
+    <meta property="og:image" content="https://gregorynielson.github.io/wdd231/final/nominate-og.png">
+    <meta property="og:url" content="https://www.gregorynielson.github.io/wdd231/final/join.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap" rel="stylesheet">
+    <script src="scripts/get-dates.js" defer></script>
+    <script src="scripts/nav-menu.js" defer></script>
+    <script src="scripts/charity-form-data.js" defer></script>
+    
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="site logo" loading="lazy">
+        <div>
+            <span class="title">Golfing to Give</span>
+        </div>
+
+        <a id="menu" class="hamburger" href="#" aria-label="menu button"></a>
+        <nav class="menu-list">
+            <ul class="navigation">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="information.html">Information</a>
+                </li>
+                <li>
+                    <a href="join.html">Join</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="form-data-display">
+        <h1>Nomination Confirmation</h1>
+        <h2>Thank you for nominating a charity!</h2>
+        <div id="charity-info">
+
+        </div>
+        <p class="num-charity"></p>
+    </main>
+    <footer>
+        <div>
+            <p class="footer-title">Golfing to Give</p>
+            <p>8471 N Coast Hwy</p>
+            <p>Laguna Beach, CA 92651</p>
+            <p>info@golfingtogive.org</p>
+            <p>(213) 555-8925</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" aria-label="link to facebook home page">
+                <img class="facebook" src="images/facebook.svg" alt="facebook logo" loading="lazy">
+            </a>
+            <a href="https://www.youtube.com" aria-label="link to youtube home page">
+                <img class="youtube" src="images/youtube.svg" alt="youtube logo" loading="lazy">
+            </a>
+            <a href="https://github.com/gregorynielson/wdd231/final" aria-label="link to github repository">
+                <img class="github" src="images/github.svg" alt="github logo" loading="lazy">
+            </a>
+            <a href="https://www.linkedin.com" aria-label="link to linked in home page">
+                <img class="linkedin" src="images/linkedin.svg" alt="linked in logo" loading="lazy">
+            </a>
+        </div>
+        <div>
+            <p>WDD 231 Final Project</p>
+            <p>Greg Nielson</p>
+            <a href="https://www.youtube.com" aria-label="link to Java Script youtube video">
+                <p>Java Script Video</p>
+            </a>
+            <a href="https://www.gregorynielson.github.io/wdd231/final/attributions.html" aria-label="link to attributions page">
+                <p>Attributions Page</p>
+            </a>
+            <p>&copy; <span id="year"></span> Golfing to Give</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

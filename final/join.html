@@ -6,27 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golfing to Give | Join</title>
     <meta name="description"
-        content="this is the home page for Golfing to Give, a charity golf club with various rotating weekend events.">
+        content="this is the join page for Golfing to Give, with forms for memberships, single tournaments, charities, and sponsors.">
     <meta name="author" content="Greg Nielson">
-    <meta property="og:title" content="Golfing for Good Home Page">
+    <meta property="og:title" content="Golfing to Give Join Page">
     <meta property="og:description"
-        content="This is the home page for Golfing to Give, with a quick overview of the club and what it offers.">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="https://www.gregorynielson.github.io/wdd231/final/index.html">
+        content="This is the join page for Golfing to Give, with forms for memberships, single tournaments, charities, and sponsors.">
+    <meta property="og:image" content="https://gregorynielson.github.io/wdd231/final/join-og.png">
+    <meta property="og:url" content="https://www.gregorynielson.github.io/wdd231/final/join.html">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap" rel="stylesheet">
     <script src="scripts/get-dates.js" defer></script>
     <script src="scripts/nav-menu.js" defer></script>
-    <script src="scripts/course-cards.js" defer></script>
     
 </head>
 
 <body>
     <header>
-        <img src="#" alt="site logo">
+        <img src="images/logo.svg" alt="site logo" loading="lazy">
         <div>
             <span class="title">Golfing to Give</span>
         </div>
@@ -46,38 +48,199 @@
             </ul>
         </nav>
     </header>
-    <main>
-
-        <h1>Join</h1>
-        
-
+    <main class="four-forms">
+        <h1 class="join-title">Join</h1>
+        <section>
+            <h2>Membership Registration</h2>
+            <form title="Membership Registration" id="membership" action="membership.html" method="GET">
+                <div class="first-name">
+                    <label for="firstname">First Name <span class="required">*</span></label>
+                    <input type="text" title="Please enter your first name" id="firstname" name="firstname" autocomplete="given-name" required>
+                </div>
+                <div class="last-name">
+                    <label for="lastname">Last Name <span class="required">*</span></label>
+                    <input type="text" title="Please enter your last name" id="lastname" name="lastname" autocomplete="family-name" required>
+                </div>
+                <div class="street">
+                    <label for="street">Street <span class="required">*</span></label>
+                    <input type="text" title="Please enter your street" id="street" name="street" placeholder="123 Main St" required>
+                </div>
+                <div class="city">
+                    <label for="city">City <span class="required">*</span></label>
+                    <input type="text" title="Please enter your city" id="city" name="city" placeholder="Los Angeles" required>
+                </div>
+                <div class="state">
+                    <label for="state">State <span class="required">*</span></label>
+                    <input type="text" title="Please enter your state" id="state" name="state" placeholder="CA" required>
+                </div>
+                <div class="zip">
+                    <label for="zipcode">Zip Code <span class="required">*</span></label>
+                    <input type="text" title="Please enter your zip code" id="zipcode" name="zipcode" placeholder="90048" required>
+                </div>
+                <div class="phone-number">
+                    <label for="phonenum">Phone Number <span class="required">*</span></label>
+                    <input type="tel" title="Please enter your phone number" id="phonenum" name="phonenum" autocomplete="tel" required>
+                </div>
+                <div class="email-address">
+                    <label for="emailadd">Email Address <span class="required">*</span></label>
+                    <input type="email" title="Please enter your email address" id="emailadd" name="emailadd" autocomplete="email" placeholder="example@email.com" required>
+                </div>
+                <div class="form-button">
+                    <button type="submit">Become A Member</button>
+                </div>
+            </form>
+        </section>
+        <section>
+            <h2>Nominate a Charity</h2>
+            <form title="Nominate a Charity" id="nominate" action="nominate.html" method="GET">
+                <div class="first-name">
+                    <label for="namecharity">Charity Name <span class="required">*</span></label>
+                    <input type="text" title="Please enter the name of the Charity" id="namecharity" name="namecharity" required>
+                </div>
+                <div class="first-name">
+                    <label for="charitycontact">Charity Contact Name <span class="required">*</span></label>
+                    <input type="text" title="Please enter the name of a contact for the Charity" id="charitycontact" name="charitycontact" required>
+                </div>
+                <div class="phone-number">
+                    <label for="phone">Phone Number <span class="required">*</span></label>
+                    <input type="tel" title="Please enter the phone number" id="phone" name="phone" autocomplete="tel" required>
+                </div>
+                <div class="email-address">
+                    <label for="e-mail">Email Address <span class="required">*</span></label>
+                    <input type="email" title="Please enter the email address" id="e-mail" name="e-mail" autocomplete="email" placeholder="example@email.com" required>
+                </div>
+                <div class="description">
+                    <label for="charity-describe">Describe the Charity</label>
+                    <textarea title="Please enter a description of the charity" id="charity-describe" name="charity-describe" rows="6"></textarea>
+                </div>
+                <div class="form-button">
+                    <button type="submit">Nominate</button>
+                </div>
+            </form>
+        </section>
+        <section>
+            <h2>Single Tournament Entry</h2>
+            <form title="Single Tournament Entry" id="single-tournament" action="single.html" method="GET">
+                <div class="first-name">
+                    <label for="namefirst">First Name <span class="required">*</span></label>
+                    <input type="text" title="Please enter your first name" id="namefirst" name="namefirst" autocomplete="given-name" required>
+                </div>
+                <div class="last-name">
+                    <label for="namelast">Last Name <span class="required">*</span></label>
+                    <input type="text" title="Please enter your last name" id="namelast" name="namelast" autocomplete="family-name" required>
+                </div>
+                <div class="phone-number">
+                    <label for="numphone">Phone Number <span class="required">*</span></label>
+                    <input type="tel" title="Please enter your phone number" id="numphone" name="numphone" autocomplete="tel" required>
+                </div>
+                <div class="email-address">
+                    <label for="emailaddress">Email Address <span class="required">*</span></label>
+                    <input type="email" title="Please enter your email address" id="emailaddress" name="emailaddress" autocomplete="email" placeholder="example@email.com" required>
+                </div>
+                <div class="tournament-select">
+                    <label for="selection">Choose a Tournament <span class="required">*</span></label>
+                    <select title="Please select which tournament you want to register." name="selection" id="selection" required>
+                        <option value="Apr 18: Shandin Hills Golf Club">Apr 18: Shandin Hills Golf Club</option>
+                        <option value="May 2: Washatch Mountain Golf Course">May 2: Washatch Mountain Golf Course</opt>
+                        <option value="May 16: Hobble Creek Golf Course">May 16: Hobble Creek Golf Course</option>
+                        <option value="May 30: The Links at Terranea">May 30: The Links at Terranea</option>
+                        <option value="June 13: Shandin Hills Golf Club">June 13: Shandin Hills Golf Club</option>
+                        <option value="June 27: Washatch Mountain Golf Course">June 27: Washatch Mountain Golf Course</option>
+                        <option value="July 11: Dos Lagos Golf Club">July 11: Dos Lagos Golf Club</option>
+                        <option value="July 18: Shadow Glen Golf Club">July 18: Shadow Glen Golf Club</option>
+                        <option value="July 25: Hobble Creek Golf Course">July 25: Hobble Creek Golf Course</option>
+                        <option value="Aug 8: The Links at Terranea">Aug 8: The Links at Terranea</option>
+                        <option value="Aug 22: Shandin Hills Golf Club">Aug 22: Shandin Hills Golf Club</option>
+                        <option value="Aug 29: Washatch Mountain Golf Course">Aug 29: Washatch Mountain Golf Course</option>
+                        <option value="Sep 12: Hobble Creek Golf Course">Sep 12: Hobble Creek Golf Course</option>
+                        <option value="Sep 26: The Links at Terranea">Sep 26: The Links at Terranea</option>
+                        <option value="Oct 17: Shandin Hills Golf Club">Oct 17: Shandin Hills Golf Club</option>
+                        <option value="Nov 7: Washatch Mountain Golf Course">Nov 7: Washatch Mountain Golf Course</option>
+                        <option value="Dec 12: Dos Lagos Golf Club">Dec 12: Dos Lagos Golf Club</option>
+                    </select>
+                </div>
+                <div class="form-button">
+                    <button type="submit">Enter Tournament</button>
+                </div>
+            </form>
+        </section>
+        <section>
+            <h2>Become A Sponsor</h2>
+            <form title="Become a Sponsor" id="sponsor" action="sponsor.html" method="GET">
+                <div class="first-name">
+                    <label for="namesponsor">Name of Business<span class="required">*</span></label>
+                    <input type="text" title="Please enter the name of your business" id="namesponsor" name="namesponsor" required>
+                </div>
+                <div class="street">
+                    <label for="bizstreet">Street <span class="required">*</span></label>
+                    <input type="text" title="Please enter your buisiness street" id="bizstreet" name="bizstreet" placeholder="123 Main St" required>
+                </div>
+                <div class="city">
+                    <label for="bizcity">City <span class="required">*</span></label>
+                    <input type="text" title="Please enter your business city" id="bizcity" name="bizcity" placeholder="Los Angeles" required>
+                </div>
+                <div class="state">
+                    <label for="bizstate">State <span class="required">*</span></label>
+                    <input type="text" title="Please enter your business state" id="bizstate" name="bizstate" placeholder="CA" required>
+                </div>
+                <div class="zip">
+                    <label for="bizzipcode">Zip Code <span class="required">*</span></label>
+                    <input type="text" title="Please enter your business zip code" id="bizzipcode" name="bizzipcode" placeholder="90048" required>
+                </div>
+                <div class="first-name">
+                    <label for="bizcontact">Business Contact Name <span class="required">*</span></label>
+                    <input type="text" title="Please enter the name of a contact for your business" id="bizcontact" name="bizcontact" required>
+                </div>
+                <div class="phone-number">
+                    <label for="bizphone">Phone Number <span class="required">*</span></label>
+                    <input type="tel" title="Please enter the contact's phone number" id="bizphone" name="bizphone" autocomplete="tel" required>
+                </div>
+                <div class="email-address">
+                    <label for="bizemail">Email Address <span class="required">*</span></label>
+                    <input type="email" title="Please enter the contact's email address" id="bizemail" name="bizemail" autocomplete="email" placeholder="example@email.com" required>
+                </div>
+                <div class="description">
+                    <label for="bizdescribe">Describe Your Business</label>
+                    <textarea title="Please enter a description of your business" id="bizdescribe" name="bizdescribe" rows="6"></textarea>
+                </div>
+                <div class="form-button">
+                    <button type="submit">Request Sponsorship</button>
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
         <div>
             <p class="footer-title">Golfing to Give</p>
-            <p>LA County</p>
+            <p>8471 N Coast Hwy</p>
+            <p>Laguna Beach, CA 92651</p>
             <p>info@golfingtogive.org</p>
             <p>(213) 555-8925</p>
         </div>
         <div class="social-icons">
             <a href="https://www.facebook.com" aria-label="link to facebook home page">
-                <img class="facebook" src="images/facebook.svg" alt="facebook logo">
+                <img class="facebook" src="images/facebook.svg" alt="facebook logo" loading="lazy">
             </a>
             <a href="https://www.youtube.com" aria-label="link to youtube home page">
-                <img class="youtube" src="images/youtube.svg" alt="youtube logo">
+                <img class="youtube" src="images/youtube.svg" alt="youtube logo" loading="lazy">
             </a>
             <a href="https://github.com/gregorynielson/wdd231/final" aria-label="link to github repository">
-                <img class="github" src="images/github.svg" alt="github logo">
+                <img class="github" src="images/github.svg" alt="github logo" loading="lazy">
             </a>
             <a href="https://www.linkedin.com" aria-label="link to linked in home page">
-                <img class="linkedin" src="images/linkedin.svg" alt="linked in logo">
+                <img class="linkedin" src="images/linkedin.svg" alt="linked in logo" loading="lazy">
             </a>
         </div>
         <div>
             <p>WDD 231 Final Project</p>
             <p>Greg Nielson</p>
-            <p>youtube video link</p>
-            <p>&copy; <span id="year"></span> Golfing for Good</p>
+            <a href="https://www.youtube.com" aria-label="link to Java Script youtube video">
+                <p>Java Script Video</p>
+            </a>
+            <a href="https://www.gregorynielson.github.io/wdd231/final/attributions.html" aria-label="link to attributions page">
+                <p>Attributions Page</p>
+            </a>
+            <p>&copy; <span id="year"></span> Golfing to Give</p>
             <p id="lastModified"></p>
         </div>
     </footer>

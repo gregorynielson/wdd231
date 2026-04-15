@@ -1,0 +1,143 @@
+@media screen and (min-width: 641px) {
+    
+    #menu {
+        display: none;
+        grid-column: 3/4;
+    }
+
+    .title {
+        grid-column: 2/3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        position: static;
+        grid-column: 4/5;
+        
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        justify-content: space-around;
+        
+    }
+
+    .navigation li {
+        display: block;
+        margin: 0;
+    }
+
+    nav a {
+        border: 2px solid var(--quaternary-color);
+        box-sizing: border-box;
+        font-size: 1rem;
+    }
+
+    nav a:hover {
+        background-color: var(--secondary-color);
+    }
+
+    .menu-list {
+        display: block;
+    }
+
+    .list div {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .list .website {
+        display: block;
+    }
+
+    .hero-button {
+        top: 90%;
+        left: 35%;
+        transform: translate(-20%, -230%);
+    }
+
+    .on-page {
+        border-bottom: 2px solid var(--tertiary-color);
+        background-color: var(--primary-color);
+    }
+
+    .cubes {
+        display: grid;
+        grid-template-areas:
+            "pic1 text1"
+            "text2 pic2";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cubes div {
+        height: 400px;
+        
+    }
+
+    .imgone {
+        grid-area: pic1;
+    }
+
+    .cubecharity {
+        grid-area: text1;
+    }
+
+    .imgtwo {
+        grid-area: pic2;
+    }
+
+    .cubemember {
+        grid-area: text2;
+    }
+
+    #sponsor-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .four-forms {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .join-title {
+        grid-column: 1/3;
+    }
+
+    .info-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .info-page h1, .course-info, .charity-info, .sponsor-info {
+        grid-column: 1/3;
+    }
+
+    .org-info {
+        grid-column: 1/2;
+        padding: 1rem;
+        
+    }
+
+    .member-info {
+        grid-column: 2/3;
+        padding: 1rem;
+    }
+
+    .org-info h2, .member-info h2 {
+        text-align: center;
+    }
+
+    .next-event {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
