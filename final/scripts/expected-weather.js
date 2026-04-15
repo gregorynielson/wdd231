@@ -1,6 +1,6 @@
 const currentTemp = document.querySelector("#current-temp");
-const weatherIcon = document.querySelector("#weather-icon");
-const captionDesc = document.querySelector("figcaption");
+const conditions = document.querySelector("#weather-conditions");
+const windSpeed = document.querySelector("#wind-speed");
 const url = "https://api.openweathermap.org/data/2.5/forecast?lat=34.15&lon=-117.32&units=imperial&appid=241373847c264c52b03f545626b36b30"
 
 
@@ -22,10 +22,7 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(data) {
-    currentTemp.innerHTML =`<span class="event">Temperature:</span> ${data.list[34].main.temp}&deg;F`;
-    const iconsrc = `https://openweathermap.org/img/wn/${data.list[34].weather[0].icon}@2x.png`;
-    let desc = data.list[34].weather[0].description;
-    weatherIcon.setAttribute("SRC", iconsrc);
-    weatherIcon.setAttribute("alt", desc);
-    captionDesc.textContent = `${desc}`;
+    currentTemp.innerHTML =`<span class="event">Temperature:</span> ${data.list[23].main.temp}&deg;F`;
+    conditions.innerHTML = `<span class="event">Conditions:</span> ${data.list[23].weather[0].main}`;
+    windSpeed.innerHTML = `<span class="event">Wind Speed:</span> ${data.list[23].wind.speed} mph`;
 }

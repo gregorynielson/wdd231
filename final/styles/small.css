@@ -138,6 +138,10 @@ h1 {
     font-size: 1.5rem;
 }
 
+#weather-icon {
+    width: auto;
+}
+
 .carousel {
     overflow: hidden;
     width: 100%;
@@ -328,22 +332,17 @@ form label {
 .phone-number,
 .business-name,
 .member-level,
-.description, .street, .city, .state, .zip {
+.description, .street, .city, .state, .zip, .tournament-select {
     padding: 1rem;
     display: grid;
     gap: 10px;
     color: var(--primary-text);
 }
 
-.radio-buttons {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 10px;
-}
-
 input[type="text"],
 input[type="email"],
-input[type="tel"] {
+input[type="tel"],
+select {
     height: 30px;
     min-width: 100px;
 }
